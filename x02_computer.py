@@ -1,4 +1,5 @@
 #!python3
+from random import randint
 """
 Create a function that creates a random choice for the computer player:
 input parameters: none required
@@ -9,14 +10,12 @@ output:
 2 : scissors
 """
 
+
 def computerChoice():
-  
-  
-  
-  
-  return value
+    option = int(randint(0, 3))
+    return option
 
 
 if __name__ == "__main__":
-  computer = computerChoice()
-  print(computer)
+    computer = computerChoice()
+    print(computer)

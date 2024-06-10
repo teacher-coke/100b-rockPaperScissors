@@ -15,18 +15,21 @@ rock
 Output: 0
 """
 
+
+def player(c):
+    if c == "rock":
+        return 0
+    elif c == "paper":
+        return 1
+    elif c == "scissors":
+        return 2
+
+
 def playerChoice():
-  '''
-  No input parameters needed.
-  Function should ask the players to make their choice.  How you ask is unimportant, but the
-  output must be consistent:
-  0: rock
-  1: paper
-  2: scissors
-  '''
-  return value
+    choice = input("Enter rock, paper, or scissors: ").lower()
+    return player(choice)
 
 
 if __name__ == "__main__":
-  player = playerChoice()
-  print(player)
+    player = playerChoice()
+    print(player)
